@@ -1,4 +1,4 @@
-# Umee
+# Umee mainnet guide
 
 sudo apt update
 
