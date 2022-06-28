@@ -4,7 +4,7 @@
     
     sudo apt install make clang pkg-config libssl-dev build-essential git jq ncdu bsdmainutils htop net-tools lsof -y < "/dev/null"
 
-#Go
+#Go and binaries 
 
     wget https://golang.org/dl/go1.18.1.linux-amd64.tar.gz; \
     rm -rv /usr/local/go; \
@@ -26,6 +26,7 @@
     umeed init moniker --chain-id umee-1
 
     wget -O $HOME/.umee/config/genesis.json https://github.com/umee-network/mainnet/raw/main/genesis.json \
+    
     jq -S -c -M '' $HOME/.umee/config/genesis.json | shasum -a 256
 #### d4264b31472a922ec05620793dd8832a3a78032b23cdaa065f38ff3803f13800
 
